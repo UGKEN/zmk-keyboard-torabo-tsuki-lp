@@ -50,11 +50,11 @@
 
         layer_3 {
             bindings = <
-&trans  &trans      &trans      &trans      &trans          &trans                                    &trans              &trans     &trans     &trans     &trans               &trans
-&trans  &kp N1      &kp N2      &kp N3      &kp N4          &kp N5                                    &kp F1              &kp F2     &kp F3     &kp F4     &kp F5               &trans
-&trans  &kp N6      &kp N7      &kp N8      &kp N9          &kp N0        &trans              &trans  &kp LA(LEFT_ARROW)  &mkp LCLK  &mkp MCLK  &mkp RCLK  &kp LA(RIGHT_ARROW)  &trans
-&trans  &bt BT_PRV  &bt BT_NXT  &bt BT_CLR  &bt BT_CLR_ALL  &out OUT_TOG  &trans              &trans  &kp LBKT            &kp SEMI   &kp APOS   &kp RBKT   &kp BSLH             &trans
-&trans  &trans      &trans      &trans      &trans          &trans        &kp LA(LC(DELETE))  &trans  &trans              &trans     &trans     &trans     &trans               &trans
+&trans  &trans      &trans      &trans      &trans          &trans                                    &trans           &trans     &trans     &trans     &trans       &trans
+&trans  &kp N1      &kp N2      &kp N3      &kp N4          &kp N5                                    &kp F1           &kp F2     &kp LC(R)  &kp F4     &kp F5       &trans
+&trans  &kp N6      &kp N7      &kp N8      &kp N9          &kp N0        &trans              &trans  &kp LC(LS(TAB))  &mkp LCLK  &mkp MCLK  &mkp RCLK  &kp LC(TAB)  &trans
+&trans  &bt BT_PRV  &bt BT_NXT  &bt BT_CLR  &bt BT_CLR_ALL  &out OUT_TOG  &trans              &trans  &kp LBKT         &kp SEMI   &kp LC(W)  &kp RBKT   &kp BSLH     &trans
+&trans  &trans      &trans      &trans      &trans          &trans        &kp LA(LC(DELETE))  &trans  &trans           &trans     &trans     &trans     &trans       &trans
             >;
         };
     };
