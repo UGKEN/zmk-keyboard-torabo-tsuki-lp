@@ -36,16 +36,16 @@
         compatible = "zmk,combos";
 
         bt_clear {
-            bindings = <&bt BT_CLR>;
+            bindings = <&bt BT_CLR>
             key-positions = <28 29>;
             layers = <2>;
         };
     };
 
     trackball_listener {
-                input-processors = <&zip_xy_scaler 1 5>;
-                input-processors = <&zip_scroll_scaler 1 5>;
-                input-processors = <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>;
+//                input-processors = <&zip_xy_scaler 1 5>;
+//                input-processors = <&zip_scroll_scaler 1 5>;
+//                input-processors = <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>;
 
         scroller {
             layers = <2>;
