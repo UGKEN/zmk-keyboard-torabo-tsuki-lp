@@ -1,6 +1,7 @@
 #include <input/processors.dtsi>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 
@@ -78,11 +79,11 @@
 
         layer_2 {
             bindings = <
-&trans  &trans            &trans            &trans        &trans               &trans                               &trans    &trans    &trans    &trans    &trans              &trans
-&trans  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(N3)    &kp LS(N4)           &kp LS(N5)                           &kp F1    &kp F2    &kp F3    &kp F4    &kp F5              &trans
-&trans  &kp LS(N6)        &kp LS(N7)        &kp LS(N8)    &kp LS(N9)           &kp LS(N0)           &trans  &trans  &kp F6    &kp F7    &kp F8    &kp F9    &kp F10             &trans
-&trans  &kp JP_YEN        &kp JP_PIPE       &kp JP_CARET  &kp INTERNATIONAL_5  &kp INTERNATIONAL_4  &trans  &trans  &kp LBKT  &kp SEMI  &kp APOS  &kp RBKT  &mt RIGHT_ALT BSLH  &trans
-&trans  &trans            &trans            &trans        &trans               &trans               &trans  &trans  &trans    &trans    &trans    &trans    &to 3               &trans
+&trans  &trans            &trans            &trans        &trans               &trans                               &trans    &trans    &trans    &trans             &trans              &trans
+&trans  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(N3)    &kp LS(N4)           &kp LS(N5)                           &kp F1    &kp F2    &kp F3    &kp F4             &kp F5              &trans
+&trans  &kp LS(N6)        &kp LS(N7)        &kp LS(N8)    &kp LS(N9)           &kp LS(N0)           &trans  &trans  &kp F6    &kp F7    &kp F8    &kp F9             &kp F10             &trans
+&trans  &kp JP_YEN        &kp JP_PIPE       &kp JP_CARET  &kp INTERNATIONAL_5  &kp INTERNATIONAL_4  &trans  &trans  &kp LBKT  &kp SEMI  &kp APOS  &kp RBKT           &mt RIGHT_ALT BSLH  &trans
+&trans  &trans            &trans            &trans        &trans               &trans               &trans  &trans  &trans    &trans    &trans    &ext_power EP_TOG  &to 3               &trans
             >;
         };
 
@@ -92,7 +93,7 @@
 &trans  &kp N1        &kp N2           &kp N3        &kp N4        &kp N5                                    &trans        &trans           &kp LC(R)  &trans       &trans         &trans
 &trans  &kp N6        &kp N7           &kp N8        &kp N9        &kp N0        &trans              &trans  &kp LA(LEFT)  &mkp LCLK        &mkp MCLK  &mkp RCLK    &kp LA(RIGHT)  &trans
 &trans  &bt BT_SEL 0  &bt BT_SEL 1     &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &to 0               &to 4   &trans        &kp LS(LC(TAB))  &kp LC(W)  &kp LC(TAB)  &trans         &trans
-&trans  &trans        &kp LA(LC(END))  &bt BT_CLR    &trans        &to 0         &kp LA(LC(DELETE))  &trans  &trans        &trans           &trans     &trans       &trans         &trans
+&trans  &trans        &kp LA(LC(END))  &bt BT_CLR    &trans        &to 0         &kp LA(LC(DELETE))  &trans  &reset        &trans           &trans     &trans       &trans         &trans
             >;
         };
 
@@ -118,11 +119,11 @@
 
         layer_6 {
             bindings = <
-&trans  &trans            &trans             &trans            &trans             &trans                         &trans      &trans    &trans             &trans            &trans                       &trans
-&trans  &kp LS(NUMBER_1)  &kp DOUBLE_QUOTES  &kp LS(N3)        &kp LS(N4)         &kp LS(N5)                     &kp F1      &kp F2    &kp F3             &kp F4            &kp F5                       &trans
-&trans  &kp LS(N7)        &kp SINGLE_QUOTE   &kp LS(N9)        &kp LS(N0)         &kp EQUAL      &trans  &trans  &kp F6      &kp F7    &kp F8             &kp F9            &kp F10                      &trans
-&trans  &kp BACKSLASH     &kp LS(BACKSLASH)  &kp LS(NUMBER_6)  &kp LC(LS(SPACE))  &kp LC(SPACE)  &trans  &trans  &kp LS(N2)  &kp SEMI  &kp LS(SEMICOLON)  &kp LEFT_BRACKET  &mt RIGHT_ALT RIGHT_BRACKET  &trans
-&trans  &trans            &trans             &trans            &trans             &trans         &trans  &trans  &trans      &trans    &trans             &trans            &to 7                        &trans
+&trans  &trans            &trans             &trans            &trans             &trans                         &trans      &trans    &trans             &trans             &trans                       &trans
+&trans  &kp LS(NUMBER_1)  &kp DOUBLE_QUOTES  &kp LS(N3)        &kp LS(N4)         &kp LS(N5)                     &kp F1      &kp F2    &kp F3             &kp F4             &kp F5                       &trans
+&trans  &kp LS(N7)        &kp SINGLE_QUOTE   &kp LS(N9)        &kp LS(N0)         &kp EQUAL      &trans  &trans  &kp F6      &kp F7    &kp F8             &kp F9             &kp F10                      &trans
+&trans  &kp BACKSLASH     &kp LS(BACKSLASH)  &kp LS(NUMBER_6)  &kp LC(LS(SPACE))  &kp LC(SPACE)  &trans  &trans  &kp LS(N2)  &kp SEMI  &kp LS(SEMICOLON)  &kp LEFT_BRACKET   &mt RIGHT_ALT RIGHT_BRACKET  &trans
+&trans  &trans            &trans             &trans            &trans             &trans         &trans  &trans  &trans      &trans    &trans             &ext_power EP_TOG  &to 7                        &trans
             >;
         };
 
