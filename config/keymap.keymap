@@ -68,12 +68,12 @@
 
         layer_1 {
             bindings = <
-            >;
 &trans  &trans         &trans              &trans          &trans           &trans                                          &trans           &trans           &trans           &trans           &trans                 &trans
 &trans  &kp LC(SPACE)  &kp LC(LEFT_ARROW)  &kp UP_ARROW    &kp LC(RIGHT)    &mkp MCLK                                       &kp TILDE        &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp LS(MINUS)          &trans
 &trans  &mo 2          &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW  &mkp LCLK  &trans  &trans                       &kp KP_DIVIDE    &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MINUS           &trans
 &trans  &kp LG(Z)      &kp LG(X)           &kp LG(C)       &kp LG(V)        &mkp RCLK  &trans  &trans                       &kp KP_ASTERISK  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &mt RIGHT_ALT KP_PLUS  &trans
 &trans  &trans         &trans              &trans          &kp KP_NUMLOCK   &trans     &trans  &mt RIGHT_SHIFT KP_NUMBER_0  &kp KP_COMMA     &trans           &trans           &trans           &trans                 &trans
+            >;
         };
 
         layer_2 {
